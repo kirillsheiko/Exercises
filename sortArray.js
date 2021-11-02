@@ -9,7 +9,7 @@ function sortArray(array){
   oddArray.sort(compareNumbers);
   let j = 0;
   for (let i = 0; i < array.length; i++){
-    if (array[i] % 2 == 1){
+    if (Math.pow(array[i] % 2, 2) == 1){
       array[i] = oddArray[j];
       j++;
     }
