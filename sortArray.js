@@ -1,7 +1,7 @@
 let array = [5, 6, 1, 7, 8, 0, 22, 15];
 function sortArray(array){
   const oddArray = array.filter(function(oddNumber){
-    return oddNumber % 2 == 1;
+    return Math.pow(oddNumber % 2, 2) == 1;
   });
   function compareNumbers(a,b){
     return a - b;
@@ -16,3 +16,4 @@ function sortArray(array){
   }
 return array;
 }
+sortArray(array);
